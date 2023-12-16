@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduBot - Personalized Learning Platform</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <h1 class="logo"><a href="images/logo.jpg">Edubot</a></h1> <!-- App name as a logo -->
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/About">About Us</a></li>
+          <li><a href="/Course">Courses</a></li>
+          <li><a href="/Feedback">Feedback</a></li>
+          <li><a href="/myaccount">My Account</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="content-item" onclick="navigateTo('index.html')">
+      <h1><a class="anchor" href="https://www.udemy.com/">Continue Developing Your Skills</a></h1>
+      <span class="arrow">&rarr;</span>
+      <!-- Content for home section -->
+    </section>
+    <section id="about" class="content-item" onclick="navigateTo('career.html')">
+      <h2><a class="anchor" href="https://www.indeed.com/career-advice/career-development/what-is-career-guidance">Career Guidance</a></h2>
+      <span class="arrow">&rarr;</span>
+      <!-- Content for about section -->
+    </section>
+    <section id="courses" class="content-item" onclick="navigateTo('events.html')">
+      <h2><a class="anchor" href="https://www.eventbrite.com/d/online/webinar/">Live Webinars/Events</a></h2>
+      <span class="arrow">&rarr;</span>
+      <!-- Content for courses section -->
+    </section>
+    <section id="progress" class="content-item" onclick="navigateTo('progress.html')">
+      <h2><a class="anchor" href="https://blog.rescuetime.com/track-progress/">Track Your Progress</a></h2>
+      <span class="arrow">&rarr;</span>
+      <!-- Chat Form -->
+      <section id="chat" class="content-item">
+        <h2>Chat with EduBot</h2>
+        <div id="chat-container"></div>
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer content -->
+    <p>&copy; 2023 EduBot. All rights reserved.</p>
+  </footer>
+
+  <!-- Update the script source to point to your Python backend -->
+  <script src="http://localhost:5000/static/scripts.js"></script>
+
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

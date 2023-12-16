@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduBot - Feedback</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <h1 class="logo"><a href="images/logo.jpg">Edubot</a></h1> <!-- App name as a logo -->
+        <nav>
+            <ul>
+                <li><a style="margin: 2px;" href="/">Home</a></li>
+                <li><a href="/About">About Us</a></li>
+                <li><a href="/Course">Courses</a></li>
+                <li><a href="/Feedback">Feedback</a></li>
+                <li><a href="/myaccount">My Account</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main content -->
+<main class="container mt-5">
+    <!-- Feedback Section -->
+    <section id="feedback" class="mb-5">
+        <h2>Provide Your Feedback</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+
+            <label for="message">Your Feedback:</label>
+            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+
+            <button type="submit" class="btn btn-primary mt-3">Submit Feedback</button>
+        </form>
+    </section>
+</main>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Your custom JavaScript (if needed) -->
+
+</body>
+</html>
